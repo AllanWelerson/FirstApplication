@@ -1,0 +1,15 @@
+
+#app{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px;
+}
+main{
+  width: 700px;
+  margin: 20px;
+}
+
+nav{
+  width: 300px;
+}

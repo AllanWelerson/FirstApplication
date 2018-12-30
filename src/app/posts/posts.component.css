@@ -1,0 +1,9 @@
+#posts{
+  padding: 10px;
+}
+
+#posts > h1{
+  font-size: 30px;
+  text-align: center;
+  color: #c0392b;
+}

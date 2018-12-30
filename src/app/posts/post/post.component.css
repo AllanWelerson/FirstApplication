@@ -1,0 +1,17 @@
+.post{
+  border: 1px solid #c0392b;
+  padding: 20px;
+  margin: 20px 10px;
+}
+
+.post h1{
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.post .users{
+  margin-top: 10px;
+
+}
+
+

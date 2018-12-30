@@ -1,0 +1,14 @@
+<section class="users">
+    <h1>Users</h1>
+
+    <article *ngFor="let user of users" class="user">
+
+      <h2>{{user.username}}</h2>
+      <p>Name: {{user.name}}</p>
+      <p>Email: {{user.email}}</p>
+      <p>Phone: {{user.phone}}</p>
+      <p>WebSite: {{user.website}}</p>
+      <button>See more</button>
+
+  </article>
+</section>
