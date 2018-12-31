@@ -14,4 +14,18 @@
 
 }
 
+.post button{
+  margin-top: 10px;
+  border: 1px solid #c0392b;
+  color: white;
+  background-color: #c0392b;
+  padding: 5px 10px;
+}
+
+.post button:hover,
+.post button:focus{
+  cursor: pointer;
+  background-color: white;
+  color: #c0392b;
+}
 

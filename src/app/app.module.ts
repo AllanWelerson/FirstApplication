@@ -9,6 +9,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { PostComponent } from './posts/post/post.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { CommentsComponent } from './posts/comments/comments.component';
 
 
 
@@ -21,7 +22,8 @@ import { HttpClientModule } from '@angular/common/http';
     NavComponent,
     UsersComponent,
     NotFoundComponent,
-    PostComponent
+    PostComponent,
+    CommentsComponent
   ],
   imports: [
     BrowserModule,

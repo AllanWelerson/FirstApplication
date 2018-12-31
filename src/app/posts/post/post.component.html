@@ -9,4 +9,7 @@
     <p>Por : {{user.name}}</p>
   </section>
 
+  <button (click)="showCommentsControl()">{{txtButton}}</button>
+  <app-comments *ngIf="showComments" [postId]="post.id"></app-comments>
+
 </article>

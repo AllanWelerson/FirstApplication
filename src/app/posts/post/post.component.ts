@@ -11,11 +11,18 @@ export class PostComponent implements OnInit {
   @Input() public post;
   public user = {
   };
+  public showComments = false;
+  public txtButton = 'Show Comments';
 
   constructor(private usersService: UsersService) { }
 
   ngOnInit() {
     this.usersService.getUser(this.post.userId).subscribe( user => this.user = user);
+  }
+
+  showCommentsControl(){
+    this.showComments = !this.showComments;
+    this.txtButton = this.showComments ? 'Hide Comments' : 'Show Comments ';
   }
 
 

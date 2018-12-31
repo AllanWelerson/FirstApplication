@@ -1,0 +1,13 @@
+<section id="comments">
+  <h3>Comments</h3>
+  <article *ngFor="let comment of comments" class="commentCard">
+    <h4>{{comment.name}}</h4>
+    <p class="email">Email: {{comment.email}}</p>
+    <p class="comment">
+      {{comment.body}}
+    </p>
+  </article>
+
+</section>
+
+
