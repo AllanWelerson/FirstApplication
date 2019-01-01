@@ -10,7 +10,7 @@ import { PostComponent } from './posts/post/post.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { CommentsComponent } from './posts/comments/comments.component';
-
+import { UserComponent } from './user/user.component';
 
 
 
@@ -23,7 +23,8 @@ import { CommentsComponent } from './posts/comments/comments.component';
     UsersComponent,
     NotFoundComponent,
     PostComponent,
-    CommentsComponent
+    CommentsComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,

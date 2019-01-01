@@ -8,7 +8,9 @@
       <p>Email: {{user.email}}</p>
       <p>Phone: {{user.phone}}</p>
       <p>WebSite: {{user.website}}</p>
-      <button>See more</button>
+      <div class="button">
+        <a class="btn" routerLink="/user/{{user.id}}" >See more</a>
+      </div>
 
   </article>
 </section>

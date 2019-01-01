@@ -7,6 +7,7 @@ import { HttpClient } from '@angular/common/http';
 export class UsersService {
 
   private users;
+  private user;
   private urlData = "https://jsonplaceholder.typicode.com/users";
 
   constructor(private http: HttpClient) { }
@@ -19,6 +20,7 @@ export class UsersService {
 
   getUser(id: number){
     const request = this.http.get(`${this.urlData}/${id}`);
+    request.subscribe(user => this.user = user);
     return request;
   }
 }
