@@ -14,9 +14,14 @@ export class PostComponent implements OnInit {
   public showComments = false;
   public txtButton = 'Show Comments';
 
-  constructor(private usersService: UsersService) { }
+  constructor(private usersService: UsersService) {
+    this.user = {
+      name : ""
+    }
+  }
 
   ngOnInit() {
+
     this.usersService.getUser(this.post.userId).subscribe( user => this.user = user);
   }
 

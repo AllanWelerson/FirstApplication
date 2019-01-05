@@ -14,10 +14,12 @@ export class UserComponent implements OnInit {
   public user = {};
 
   constructor(private usersService: UsersService, private route: ActivatedRoute,
-              private location: Location) { }
+              private location: Location) {
+    this.initUser();
+              }
 
   ngOnInit() {
-    this.initUser();
+
     const id = Number(this.route.snapshot.paramMap.get('id'));
     this.usersService.getUser(id).subscribe(user => this.user = user);
   }
