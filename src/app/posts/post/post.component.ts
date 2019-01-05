@@ -9,8 +9,7 @@ import { UsersService } from 'src/app/services/users.service';
 export class PostComponent implements OnInit {
 
   @Input() public post;
-  public user = {
-  };
+  public user;
   public showComments = false;
   public txtButton = 'Show Comments';
 

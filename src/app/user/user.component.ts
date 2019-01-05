@@ -11,7 +11,7 @@ import { Location } from '@angular/common';
 })
 export class UserComponent implements OnInit {
 
-  public user = {};
+  public user;
 
   constructor(private usersService: UsersService, private route: ActivatedRoute,
               private location: Location) {
